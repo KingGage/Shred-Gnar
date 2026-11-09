@@ -1,0 +1,33 @@
+# Qt build files
+*.pro.user
+*.pro.user.*
+*.autosave
+*_qmlcache.qrc
+
+# Build directories
+build/
+debug/
+release/
+Debug/
+Release/
+
+# Generated files
+moc_*.cpp
+moc_*.h
+qrc_*.cpp
+ui_*.h
+*.o
+*.obj
+*.so
+*.dylib
+*.dll
+*.exe
+images.json
+
+# Qt Creator settings
+.qmake.stash
+*.qmlc
+*.jsc 
+
+# macOS
+.DS_Store

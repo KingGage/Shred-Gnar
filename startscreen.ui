@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>StartScreen</class>
+ <widget class="QWidget" name="StartScreen">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>750</width>
+    <height>750</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QLabel" name="backgroundImage">
+   <property name="geometry">
+    <rect>
+     <x>-3</x>
+     <y>5</y>
+     <width>751</width>
+     <height>741</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="ShredGnarResources.qrc">:/backgroundSprites/a9_Resources/backgroundResources/ShredGnarWelcome.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="startButton">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>680</y>
+     <width>291</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton#startButton {
+    /* Text */
+    color: #FFFFFF;
+    text-transform: uppercase;        /* Qt ignores this but we’ll set text in code too */
+    font-family: &quot;Press Start 2P&quot;, &quot;Pixel Arial 11&quot;, &quot;Monospace&quot;;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 2px;
+
+    /* Size / padding */
+    padding: 6px 28px;
+    min-height: 32px;
+
+    /* Button body – dark navy with slight vertical gradient */
+    background-color: qlineargradient(
+        x1:0, y1:0, x2:0, y2:1,
+        stop:0 #243764,
+        stop:1 #1B2C56
+    );
+
+    /* White outline like in the pixel art */
+    border-style: solid;
+    border-width: 3px;
+    border-color: #FFFFFF;
+    border-radius: 8px;
+
+    /* Remove default focus rectangle */
+    outline: none;
+}
+
+/* Hover – slightly brighter */
+QPushButton#startButton:hover {
+    background-color: qlineargradient(
+        x1:0, y1:0, x2:0, y2:1,
+        stop:0 #2c447b,
+        stop:1 #243764
+    );
+}
+
+/* Pressed – darker and “pushed down” effect */
+QPushButton#startButton:pressed {
+    background-color: #111B33;
+    padding-top: 8px;      /* move text down a bit */
+    padding-bottom: 4px;
+}</string>
+   </property>
+   <property name="text">
+    <string>START ADVENTURE</string>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="ShredGnarResources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,1341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SkiShop</class>
+ <widget class="QWidget" name="SkiShop">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>750</width>
+    <height>750</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QLabel" name="background">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>-10</y>
+     <width>761</width>
+     <height>761</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="ShredGnarResources.qrc">:/backgroundSprites/a9_Resources/backgroundResources/SkiShop.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="shredGnarButton">
+   <property name="geometry">
+    <rect>
+     <x>530</x>
+     <y>680</y>
+     <width>210</width>
+     <height>48</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton#shredGnarButton {
+    /* Text */
+    color: #FFFFFF;
+    font-family: &quot;Press Start 2P&quot;, &quot;Pixel Arial 11&quot;, &quot;Monospace&quot;;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 2px;
+
+    /* Size / padding – slightly shorter than startButton */
+    padding: 6px 16px;      /* was 28px horizontally */
+    min-height: 30px;
+
+    /* Button body – same navy gradient */
+    background-color: qlineargradient(
+        x1:0, y1:0, x2:0, y2:1,
+        stop:0 #243764,
+        stop:1 #1B2C56
+    );
+}
+
+QPushButton#shredGnarButton:hover {
+    background-color: qlineargradient(
+        x1:0, y1:0, x2:0, y2:1,
+        stop:0 #2c447b,
+        stop:1 #243764
+    );
+}
+
+QPushButton#shredGnarButton:pressed {
+    background-color: #111B33;
+    padding-top: 8px;
+    padding-bottom: 4px;
+}</string>
+   </property>
+   <property name="text">
+    <string>SHRED SOME GNAR</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="gridLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>240</y>
+     <width>200</width>
+     <height>380</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="3" column="0">
+     <widget class="QPushButton" name="touringSkiButton">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#touringSkiButton{
+    /* Square tile shape */
+    min-width: 64px;
+    min-height: 64px;
+    max-width: 64px;
+    max-height: 64px;
+    padding: 0;
+    border-radius: 4px;           /* soften just a bit, set 0 for strict pixel square */
+
+    /* Text/icon color (if you show anything on it) */
+    color: #fdf5e6;
+    font-family: &quot;Segoe UI&quot;, &quot;Arial&quot;, sans-serif;
+    font-size: 10pt;
+    font-weight: bold;
+
+/* Make the icon fill the whole button */
+    qproperty-iconSize: 64px 64px;
+
+    border-radius: 4px;
+
+    /* Wood plank feel: warm vertical gradient */
+    background-color: qlineargradient(
+        x1:0, y1:0, x2:0, y2:1,
+        stop:0 #b8703a,    /* lighter top */
+        stop:0.5 #8c4b26,  /* mid brown */
+        stop:1 #5b2f16     /* darker bottom */
+    );
+
+    /* Beveled “tile” border to match cabin walls */
+    border-style: solid;
+    border-width: 3px;
+    border-top-color:    #e3a465;   /* highlight */
+    border-left-color:   #d18a4e;
+    border-right-color:  #3b1d0e;   /* shadow */
+    border-bottom-color: #2a1309;
+
+    /* Slight drop shadow look using margin */
+    margin-top: 2px;
+    margin-left: 2px;
+
+    outline: none;
+}
+
+/* Hover – brighten like it’s catching more light */
+QPushButton#touringSkiButton:hover {
+    background-color: qlineargradient(
+        x1:0, y1:0, x2:0, y2:1,
+        stop:0 #c98245,
+        stop:0.5 #a55a30,
+        stop:1 #6a351a
+    );
+}
+
+/* Pressed – darker + “pressed in” bevel */
+QPushButton#touringSkiButton:pressed {
+    background-color: qlineargradient(
+        x1:0, y1:0, x2:0, y2:1,
+        stop:0 #8a502a,
+        stop:1 #4a2410
+    );
+
+    border-top-color:    #3b1d0e;
+    border-left-color:   #3b1d0e;
+    border-right-color:  #d18a4e;
+    border-bottom-color: #e3a465;
+
+    margin-top: 3px;   /* tiny nudge down */
+    margin-left: 3px;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="ShredGnarResources.qrc">
+        <normaloff>:/skiSprites/a9_Resources/skiSprites/LockedGreenLightningSkis.png</normaloff>:/skiSprites/a9_Resources/skiSprites/LockedGreenLightningSkis.png</iconset>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QPushButton" name="parkSkiButton">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#parkSkiButton {
+    /* Square tile shape */
+    min-width: 64px;
+    min-height: 64px;
+    max-width: 64px;
+    max-height: 64px;
+    padding: 0;
+    border-radius: 4px;           /* soften just a bit, set 0 for strict pixel square */
+
+    /* Text/icon color (if you show anything on it) */
+    color: #fdf5e6;
+    font-family: &quot;Segoe UI&quot;, &quot;Arial&quot;, sans-serif;
+    font-size: 10pt;
+    font-weight: bold;
+
+/* Make the icon fill the whole button */
+    qproperty-iconSize: 64px 64px;
+
+    border-radius: 4px;
+
+    /* Wood plank feel: warm vertical gradient */
+    background-color: qlineargradient(
+        x1:0, y1:0, x2:0, y2:1,
+        stop:0 #b8703a,    /* lighter top */
+        stop:0.5 #8c4b26,  /* mid brown */
+        stop:1 #5b2f16     /* darker bottom */
+    );
+
+    /* Beveled “tile” border to match cabin walls */
+    border-style: solid;
+    border-width: 3px;
+    border-top-color:    #e3a465;   /* highlight */
+    border-left-color:   #d18a4e;
+    border-right-color:  #3b1d0e;   /* shadow */
+    border-bottom-color: #2a1309;
+
+    /* Slight drop shadow look using margin */
+    margin-top: 2px;
+    margin-left: 2px;
+
+    outline: none;
+}
+
+/* Hover – brighten like it’s catching more light */
+QPushButton#parkSkiButton:hover {
+    background-color: qlineargradient(
+        x1:0, y1:0, x2:0, y2:1,
+        stop:0 #c98245,
+        stop:0.5 #a55a30,
+        stop:1 #6a351a
+    );
+}
+
+/* Pressed – darker + “pressed in” bevel */
+QPushButton#parkSkiButton:pressed {
+    background-color: qlineargradient(
+        x1:0, y1:0, x2:0, y2:1,
+        stop:0 #8a502a,
+        stop:1 #4a2410
+    );
+
+    border-top-color:    #3b1d0e;
+    border-left-color:   #3b1d0e;
+    border-right-color:  #d18a4e;
+    border-bottom-color: #e3a465;
+
+    margin-top: 3px;   /* tiny nudge down */
+    margin-left: 3px;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="ShredGnarResources.qrc">
+        <normaloff>:/skiSprites/a9_Resources/skiSprites/LockedYellowSkis.png</normaloff>:/skiSprites/a9_Resources/skiSprites/LockedYellowSkis.png</iconset>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QPushButton" name="bigMountainSkiButton">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#bigMountainSkiButton{
+    /* Square tile shape */
+    min-width: 64px;
+    min-height: 64px;
+    max-width: 64px;
+    max-height: 64px;
+    padding: 0;
+    border-radius: 4px;           /* soften just a bit, set 0 for strict pixel square */
+
+    /* Text/icon color (if you show anything on it) */
+    color: #fdf5e6;
+    font-family: &quot;Segoe UI&quot;, &quot;Arial&quot;, sans-serif;
+    font-size: 10pt;
+    font-weight: bold;
+
+/* Make the icon fill the whole button */
+    qproperty-iconSize: 64px 64px;
+
+    border-radius: 4px;
+
+    /* Wood plank feel: warm vertical gradient */
+    background-color: qlineargradient(
+        x1:0, y1:0, x2:0, y2:1,
+        stop:0 #b8703a,    /* lighter top */
+        stop:0.5 #8c4b26,  /* mid brown */
+        stop:1 #5b2f16     /* darker bottom */
+    );
+
+    /* Beveled “tile” border to match cabin walls */
+    border-style: solid;
+    border-width: 3px;
+    border-top-color:    #e3a465;   /* highlight */
+    border-left-color:   #d18a4e;
+    border-right-color:  #3b1d0e;   /* shadow */
+    border-bottom-color: #2a1309;
+
+    /* Slight drop shadow look using margin */
+    margin-top: 2px;
+    margin-left: 2px;
+
+    outline: none;
+}
+
+/* Hover – brighten like it’s catching more light */
+QPushButton#bigMountainSkiButton:hover {
+    background-color: qlineargradient(
+        x1:0, y1:0, x2:0, y2:1,
+        stop:0 #c98245,
+        stop:0.5 #a55a30,
+        stop:1 #6a351a
+    );
+}
+
+/* Pressed – darker + “pressed in” bevel */
+QPushButton#bigMountainSkiButton:pressed {
+    background-color: qlineargradient(
+        x1:0, y1:0, x2:0, y2:1,
+        stop:0 #8a502a,
+        stop:1 #4a2410
+    );
+
+    border-top-color:    #3b1d0e;
+    border-left-color:   #3b1d0e;
+    border-right-color:  #d18a4e;
+    border-bottom-color: #e3a465;
+
+    margin-top: 3px;   /* tiny nudge down */
+    margin-left: 3px;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="ShredGnarResources.qrc">
+        <normaloff>:/skiSprites/a9_Resources/skiSprites/LockedPinkSkis.png</normaloff>:/skiSprites/a9_Resources/skiSprites/LockedPinkSkis.png</iconset>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QPushButton" name="mogulSkiButton">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#mogulSkiButton {
+    /* Square tile shape */
+    min-width: 64px;
+    min-height: 64px;
+    max-width: 64px;
+    max-height: 64px;
+    padding: 0;
+    border-radius: 4px;           /* soften just a bit, set 0 for strict pixel square */
+
+    /* Text/icon color (if you show anything on it) */
+    color: #fdf5e6;
+    font-family: &quot;Segoe UI&quot;, &quot;Arial&quot;, sans-serif;
+    font-size: 10pt;
+    font-weight: bold;
+
+/* Make the icon fill the whole button */
+    qproperty-iconSize: 64px 64px;
+
+    border-radius: 4px;
+
+    /* Wood plank feel: warm vertical gradient */
+    background-color: qlineargradient(
+        x1:0, y1:0, x2:0, y2:1,
+        stop:0 #b8703a,    /* lighter top */
+        stop:0.5 #8c4b26,  /* mid brown */
+        stop:1 #5b2f16     /* darker bottom */
+    );
+
+    /* Beveled “tile” border to match cabin walls */
+    border-style: solid;
+    border-width: 3px;
+    border-top-color:    #e3a465;   /* highlight */
+    border-left-color:   #d18a4e;
+    border-right-color:  #3b1d0e;   /* shadow */
+    border-bottom-color: #2a1309;
+
+    /* Slight drop shadow look using margin */
+    margin-top: 2px;
+    margin-left: 2px;
+
+    outline: none;
+}
+
+/* Hover – brighten like it’s catching more light */
+QPushButton#mogulSkiButton:hover {
+    background-color: qlineargradient(
+        x1:0, y1:0, x2:0, y2:1,
+        stop:0 #c98245,
+        stop:0.5 #a55a30,
+        stop:1 #6a351a
+    );
+}
+
+/* Pressed – darker + “pressed in” bevel */
+QPushButton#mogulSkiButton:pressed {
+    background-color: qlineargradient(
+        x1:0, y1:0, x2:0, y2:1,
+        stop:0 #8a502a,
+        stop:1 #4a2410
+    );
+
+    border-top-color:    #3b1d0e;
+    border-left-color:   #3b1d0e;
+    border-right-color:  #d18a4e;
+    border-bottom-color: #e3a465;
+
+    margin-top: 3px;   /* tiny nudge down */
+    margin-left: 3px;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="ShredGnarResources.qrc">
+        <normaloff>:/skiSprites/a9_Resources/skiSprites/LockedBlueOrangeSkis.png</normaloff>:/skiSprites/a9_Resources/skiSprites/LockedBlueOrangeSkis.png</iconset>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="1">
+     <widget class="QPushButton" name="carvingSkiButton">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#carvingSkiButton {
+    /* Square tile shape */
+    min-width: 64px;
+    min-height: 64px;
+    max-width: 64px;
+    max-height: 64px;
+    padding: 0;
+    border-radius: 4px;           /* soften just a bit, set 0 for strict pixel square */
+
+    /* Text/icon color (if you show anything on it) */
+    color: #fdf5e6;
+    font-family: &quot;Segoe UI&quot;, &quot;Arial&quot;, sans-serif;
+    font-size: 10pt;
+    font-weight: bold;
+
+/* Make the icon fill the whole button */
+    qproperty-iconSize: 64px 64px;
+
+    border-radius: 4px;
+
+    /* Wood plank feel: warm vertical gradient */
+    background-color: qlineargradient(
+        x1:0, y1:0, x2:0, y2:1,
+        stop:0 #b8703a,    /* lighter top */
+        stop:0.5 #8c4b26,  /* mid brown */
+        stop:1 #5b2f16     /* darker bottom */
+    );
+
+    /* Beveled “tile” border to match cabin walls */
+    border-style: solid;
+    border-width: 3px;
+    border-top-color:    #e3a465;   /* highlight */
+    border-left-color:   #d18a4e;
+    border-right-color:  #3b1d0e;   /* shadow */
+    border-bottom-color: #2a1309;
+
+    /* Slight drop shadow look using margin */
+    margin-top: 2px;
+    margin-left: 2px;
+
+    outline: none;
+}
+
+/* Hover – brighten like it’s catching more light */
+QPushButton#carvingSkiButton:hover {
+    background-color: qlineargradient(
+        x1:0, y1:0, x2:0, y2:1,
+        stop:0 #c98245,
+        stop:0.5 #a55a30,
+        stop:1 #6a351a
+    );
+}
+
+/* Pressed – darker + “pressed in” bevel */
+QPushButton#carvingSkiButton:pressed {
+    background-color: qlineargradient(
+        x1:0, y1:0, x2:0, y2:1,
+        stop:0 #8a502a,
+        stop:1 #4a2410
+    );
+
+    border-top-color:    #3b1d0e;
+    border-left-color:   #3b1d0e;
+    border-right-color:  #d18a4e;
+    border-bottom-color: #e3a465;
+
+    margin-top: 3px;   /* tiny nudge down */
+    margin-left: 3px;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="ShredGnarResources.qrc">
+        <normaloff>:/skiSprites/a9_Resources/skiSprites/LockedPurpleCyanSkis.png</normaloff>:/skiSprites/a9_Resources/skiSprites/LockedPurpleCyanSkis.png</iconset>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QPushButton" name="raceSkiButton">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#raceSkiButton {
+    /* Square tile shape */
+    min-width: 64px;
+    min-height: 64px;
+    max-width: 64px;
+    max-height: 64px;
+    padding: 0;
+    border-radius: 4px;           /* soften just a bit, set 0 for strict pixel square */
+
+    /* Text/icon color (if you show anything on it) */
+    color: #fdf5e6;
+    font-family: &quot;Segoe UI&quot;, &quot;Arial&quot;, sans-serif;
+    font-size: 10pt;
+    font-weight: bold;
+
+/* Make the icon fill the whole button */
+    qproperty-iconSize: 64px 64px;
+
+    border-radius: 4px;
+
+    /* Wood plank feel: warm vertical gradient */
+    background-color: qlineargradient(
+        x1:0, y1:0, x2:0, y2:1,
+        stop:0 #b8703a,    /* lighter top */
+        stop:0.5 #8c4b26,  /* mid brown */
+        stop:1 #5b2f16     /* darker bottom */
+    );
+
+    /* Beveled “tile” border to match cabin walls */
+    border-style: solid;
+    border-width: 3px;
+    border-top-color:    #e3a465;   /* highlight */
+    border-left-color:   #d18a4e;
+    border-right-color:  #3b1d0e;   /* shadow */
+    border-bottom-color: #2a1309;
+
+    /* Slight drop shadow look using margin */
+    margin-top: 2px;
+    margin-left: 2px;
+
+    outline: none;
+}
+
+/* Hover – brighten like it’s catching more light */
+QPushButton#raceSkiButton:hover {
+    background-color: qlineargradient(
+        x1:0, y1:0, x2:0, y2:1,
+        stop:0 #c98245,
+        stop:0.5 #a55a30,
+        stop:1 #6a351a
+    );
+}
+
+/* Pressed – darker + “pressed in” bevel */
+QPushButton#raceSkiButton:pressed {
+    background-color: qlineargradient(
+        x1:0, y1:0, x2:0, y2:1,
+        stop:0 #8a502a,
+        stop:1 #4a2410
+    );
+
+    border-top-color:    #3b1d0e;
+    border-left-color:   #3b1d0e;
+    border-right-color:  #d18a4e;
+    border-bottom-color: #e3a465;
+
+    margin-top: 3px;   /* tiny nudge down */
+    margin-left: 3px;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="ShredGnarResources.qrc">
+        <normaloff>:/skiSprites/a9_Resources/skiSprites/LockedSuperSkis.png</normaloff>:/skiSprites/a9_Resources/skiSprites/LockedSuperSkis.png</iconset>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QPushButton" name="allMountainSkiButton">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#allMountainSkiButton {
+    /* Square tile shape */
+    min-width: 64px;
+    min-height: 64px;
+    max-width: 64px;
+    max-height: 64px;
+    padding: 0;
+    border-radius: 4px;           /* soften just a bit, set 0 for strict pixel square */
+
+    /* Text/icon color (if you show anything on it) */
+    color: #fdf5e6;
+    font-family: &quot;Segoe UI&quot;, &quot;Arial&quot;, sans-serif;
+    font-size: 10pt;
+    font-weight: bold;
+
+    /* Wood plank feel: warm vertical gradient */
+    background-color: qlineargradient(
+        x1:0, y1:0, x2:0, y2:1,
+        stop:0 #b8703a,    /* lighter top */
+        stop:0.5 #8c4b26,  /* mid brown */
+        stop:1 #5b2f16     /* darker bottom */
+    );
+
+/* Make the icon fill the whole button */
+    qproperty-iconSize: 64px 64px;
+
+    border-radius: 4px;
+
+    /* Beveled “tile” border to match cabin walls */
+    border-style: solid;
+    border-width: 3px;
+    border-top-color:    #e3a465;   /* highlight */
+    border-left-color:   #d18a4e;
+    border-right-color:  #3b1d0e;   /* shadow */
+    border-bottom-color: #2a1309;
+
+    /* Slight drop shadow look using margin */
+    margin-top: 2px;
+    margin-left: 2px;
+
+    outline: none;
+}
+
+/* Hover – brighten like it’s catching more light */
+QPushButton#allMountainSkiButton:hover {
+    background-color: qlineargradient(
+        x1:0, y1:0, x2:0, y2:1,
+        stop:0 #c98245,
+        stop:0.5 #a55a30,
+        stop:1 #6a351a
+    );
+}
+
+/* Pressed – darker + “pressed in” bevel */
+QPushButton#allMountainSkiButton:pressed {
+    background-color: qlineargradient(
+        x1:0, y1:0, x2:0, y2:1,
+        stop:0 #8a502a,
+        stop:1 #4a2410
+    );
+
+    border-top-color:    #3b1d0e;
+    border-left-color:   #3b1d0e;
+    border-right-color:  #d18a4e;
+    border-bottom-color: #e3a465;
+
+    margin-top: 3px;   /* tiny nudge down */
+    margin-left: 3px;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="ShredGnarResources.qrc">
+        <normaloff>:/skiSprites/a9_Resources/skiSprites/allMountainSki.png</normaloff>:/skiSprites/a9_Resources/skiSprites/allMountainSki.png</iconset>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QPushButton" name="powderSkiButton">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#powderSkiButton {
+    /* Square tile shape */
+    min-width: 64px;
+    min-height: 64px;
+    max-width: 64px;
+    max-height: 64px;
+    padding: 0;
+    border-radius: 4px;           /* soften just a bit, set 0 for strict pixel square */
+
+    /* Text/icon color (if you show anything on it) */
+    color: #fdf5e6;
+    font-family: &quot;Segoe UI&quot;, &quot;Arial&quot;, sans-serif;
+    font-size: 10pt;
+    font-weight: bold;
+
+/* Make the icon fill the whole button */
+    qproperty-iconSize: 64px 64px;
+
+    border-radius: 4px;
+    /* Wood plank feel: warm vertical gradient */
+    background-color: qlineargradient(
+        x1:0, y1:0, x2:0, y2:1,
+        stop:0 #b8703a,    /* lighter top */
+        stop:0.5 #8c4b26,  /* mid brown */
+        stop:1 #5b2f16     /* darker bottom */
+    );
+
+    /* Beveled “tile” border to match cabin walls */
+    border-style: solid;
+    border-width: 3px;
+    border-top-color:    #e3a465;   /* highlight */
+    border-left-color:   #d18a4e;
+    border-right-color:  #3b1d0e;   /* shadow */
+    border-bottom-color: #2a1309;
+
+    /* Slight drop shadow look using margin */
+    margin-top: 2px;
+    margin-left: 2px;
+
+    outline: none;
+}
+
+/* Hover – brighten like it’s catching more light */
+QPushButton#powderSkiButton:hover {
+    background-color: qlineargradient(
+        x1:0, y1:0, x2:0, y2:1,
+        stop:0 #c98245,
+        stop:0.5 #a55a30,
+        stop:1 #6a351a
+    );
+}
+
+/* Pressed – darker + “pressed in” bevel */
+QPushButton#powderSkiButton:pressed {
+    background-color: qlineargradient(
+        x1:0, y1:0, x2:0, y2:1,
+        stop:0 #8a502a,
+        stop:1 #4a2410
+    );
+
+    border-top-color:    #3b1d0e;
+    border-left-color:   #3b1d0e;
+    border-right-color:  #d18a4e;
+    border-bottom-color: #e3a465;
+
+    margin-top: 3px;   /* tiny nudge down */
+    margin-left: 3px;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="ShredGnarResources.qrc">
+        <normaloff>:/skiSprites/a9_Resources/skiSprites/LockedGreenSkis.png</normaloff>:/skiSprites/a9_Resources/skiSprites/LockedGreenSkis.png</iconset>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QLabel" name="skiDisplayed">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>170</y>
+     <width>180</width>
+     <height>471</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QWidget" name="dataWidget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>460</x>
+     <y>160</y>
+     <width>261</width>
+     <height>521</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>8514oem</family>
+    </font>
+   </property>
+   <widget class="QWidget" name="gridLayoutWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>60</y>
+      <width>251</width>
+      <height>270</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="dataLayout">
+     <item row="3" column="0">
+      <widget class="QLabel" name="flexLabel">
+       <property name="styleSheet">
+        <string notr="true">QLabel#flexLabel {
+   color: #C9D8FF;                     /* soft icy blue */
+    font-family: &quot;Segoe UI Semibold&quot;, &quot;Helvetica Neue&quot;, &quot;Arial&quot;;
+    font-size: 24pt;
+    font-weight: 600;
+    letter-spacing: 2px;
+
+    /* look like UI chrome, not body text */
+    padding: 0px;
+    margin: 0px;
+}</string>
+       </property>
+       <property name="text">
+        <string>FLEX</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QLabel" name="name">
+       <property name="styleSheet">
+        <string notr="true">QLabel#name {
+    color: #FFFFFF;                     /* bright white */
+    font-family: &quot;Segoe UI Black&quot;, &quot;Segoe UI Bold&quot;, &quot;Arial Black&quot;, &quot;Arial&quot;;
+    font-size: 18pt;
+    font-weight: 800;
+    letter-spacing: 1px;
+
+    padding-top: 2px;                   /* tiny nudge down under the title */
+    margin: 0px;
+}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QLabel" name="flex">
+       <property name="styleSheet">
+        <string notr="true">QLabel#flex{
+    color: #FFFFFF;                     /* bright white */
+    font-family: &quot;Segoe UI Black&quot;, &quot;Segoe UI Bold&quot;, &quot;Arial Black&quot;, &quot;Arial&quot;;
+    font-size: 24pt;
+    font-weight: 800;
+    letter-spacing: 1px;
+
+    padding-top: 2px;                   /* tiny nudge down under the title */
+    margin: 0px;
+}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="nameLabel">
+       <property name="styleSheet">
+        <string notr="true">QLabel#nameLabel {
+    color: #C9D8FF;                     /* soft icy blue */
+    font-family: &quot;Segoe UI Semibold&quot;, &quot;Helvetica Neue&quot;, &quot;Arial&quot;;
+    font-size: 24pt;
+    font-weight: 600;
+    letter-spacing: 2px;
+
+    /* look like UI chrome, not body text */
+    padding: 0px;
+    margin: 0px;
+}</string>
+       </property>
+       <property name="text">
+        <string>NAME</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QLabel" name="width">
+       <property name="styleSheet">
+        <string notr="true">QLabel#width {
+    color: #FFFFFF;                     /* bright white */
+    font-family: &quot;Segoe UI Black&quot;, &quot;Segoe UI Bold&quot;, &quot;Arial Black&quot;, &quot;Arial&quot;;
+    font-size: 24pt;
+    font-weight: 800;
+    letter-spacing: 1px;
+
+    padding-top: 2px;                   /* tiny nudge down under the title */
+    margin: 0px;
+}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="0">
+      <widget class="QLabel" name="rockerLabel">
+       <property name="font">
+        <font>
+         <family>Segoe UI Semibold</family>
+         <pointsize>24</pointsize>
+         <fontweight>DemiBold</fontweight>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel#rockerLabel {
+   color: #C9D8FF;                     /* soft icy blue */
+    font-family: &quot;Segoe UI Semibold&quot;, &quot;Helvetica Neue&quot;, &quot;Arial&quot;;
+    font-size: 24pt;
+    font-weight: 600;
+    letter-spacing: 2px;
+
+    /* look like UI chrome, not body text */
+    padding: 0px;
+    margin: 0px;
+}</string>
+       </property>
+       <property name="text">
+        <string>ROCKER</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="widthLabel">
+       <property name="font">
+        <font>
+         <family>Segoe UI Semibold</family>
+         <pointsize>24</pointsize>
+         <fontweight>DemiBold</fontweight>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel#widthLabel {
+color: #C9D8FF;                     /* soft icy blue */
+    font-family: &quot;Segoe UI Semibold&quot;, &quot;Helvetica Neue&quot;, &quot;Arial&quot;;
+    font-size: 24pt;
+    font-weight: 600;
+    letter-spacing: 2px;
+
+    /* look like UI chrome, not body text */
+    padding: 0px;
+    margin: 0px;
+}</string>
+       </property>
+       <property name="text">
+        <string>WIDTH</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="1">
+      <widget class="QLabel" name="rocker">
+       <property name="styleSheet">
+        <string notr="true">QLabel#rocker {
+    color: #FFFFFF;                     /* bright white */
+    font-family: &quot;Segoe UI Black&quot;, &quot;Segoe UI Bold&quot;, &quot;Arial Black&quot;, &quot;Arial&quot;;
+    font-size: 24pt;
+    font-weight: 800;
+    letter-spacing: 1px;
+
+    padding-top: 2px;                   /* tiny nudge down under the title */
+    margin: 0px;
+}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="1">
+      <widget class="QLabel" name="price">
+       <property name="styleSheet">
+        <string notr="true">QLabel#price {
+    color: #FFFFFF;                     /* bright white */
+    font-family: &quot;Segoe UI Black&quot;, &quot;Segoe UI Bold&quot;, &quot;Arial Black&quot;, &quot;Arial&quot;;
+    font-size: 24pt;
+    font-weight: 800;
+    letter-spacing: 1px;
+
+    padding-top: 2px;                   /* tiny nudge down under the title */
+    margin: 0px;
+}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="0">
+      <widget class="QLabel" name="skiPriceLabel">
+       <property name="font">
+        <font>
+         <family>Segoe UI Semibold</family>
+         <pointsize>24</pointsize>
+         <fontweight>DemiBold</fontweight>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel#skiPriceLabel {
+   color: #C9D8FF;                     /* soft icy blue */
+    font-family: &quot;Segoe UI Semibold&quot;, &quot;Helvetica Neue&quot;, &quot;Arial&quot;;
+    font-size: 24pt;
+    font-weight: 600;
+    letter-spacing: 2px;
+
+    /* look like UI chrome, not body text */
+    padding: 0px;
+    margin: 0px;
+}</string>
+       </property>
+       <property name="text">
+        <string>PRICE</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QProgressBar" name="groomerRating">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>360</y>
+      <width>241</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>120</number>
+    </property>
+    <property name="value">
+     <number>-1</number>
+    </property>
+   </widget>
+   <widget class="QProgressBar" name="powderRating">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>420</y>
+      <width>241</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>120</number>
+    </property>
+    <property name="value">
+     <number>-1</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="groomerRatingLabel">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>330</y>
+      <width>260</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI Semibold</family>
+      <pointsize>16</pointsize>
+      <fontweight>DemiBold</fontweight>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel#groomerRatingLabel {
+    color: #C9D8FF;                     /* soft icy blue */
+    font-family: &quot;Segoe UI Semibold&quot;, &quot;Helvetica Neue&quot;, &quot;Arial&quot;;
+    font-size: 16pt;
+    font-weight: 600;
+    letter-spacing: 2px;
+
+    /* look like UI chrome, not body text */
+    padding: 0px;
+    margin: 0px;
+}</string>
+    </property>
+    <property name="text">
+     <string>Groomer Rating:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="powderRatingLabel">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>380</y>
+      <width>250</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel#powderRatingLabel {
+    color: #C9D8FF;                     /* soft icy blue */
+    font-family: &quot;Segoe UI Semibold&quot;, &quot;Helvetica Neue&quot;, &quot;Arial&quot;;
+    font-size: 16pt;
+    font-weight: 600;
+    letter-spacing: 2px;
+
+    /* look like UI chrome, not body text */
+    padding: 0px;
+    margin: 0px;
+}</string>
+    </property>
+    <property name="text">
+     <string>Powder Rating:</string>
+    </property>
+   </widget>
+   <widget class="QProgressBar" name="iceRating">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>470</y>
+      <width>241</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>120</number>
+    </property>
+    <property name="value">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="iceRatingLabel">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>440</y>
+      <width>170</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel#iceRatingLabel {
+    color: #C9D8FF;                     /* soft icy blue */
+    font-family: &quot;Segoe UI Semibold&quot;, &quot;Helvetica Neue&quot;, &quot;Arial&quot;;
+    font-size: 16pt;
+    font-weight: 600;
+    letter-spacing: 2px;
+
+    /* look like UI chrome, not body text */
+    padding: 0px;
+    margin: 0px;
+}</string>
+    </property>
+    <property name="text">
+     <string>Ice Rating:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="coinIcon">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>0</y>
+      <width>80</width>
+      <height>70</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="ShredGnarResources.qrc">:/jonnySprites/a9_Resources/jonnySprites/CoinIcon.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="pointsTotal">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>-10</y>
+      <width>151</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel#pointsTotal {
+    color: #FFFFFF;                     /* bright white */
+    font-family: &quot;Segoe UI Black&quot;, &quot;Segoe UI Bold&quot;, &quot;Arial Black&quot;, &quot;Arial&quot;;
+    font-size: 30pt;
+    font-weight: 800;
+    letter-spacing: 1px;
+
+    padding-top: 2px;                   /* tiny nudge down under the title */
+    margin: 0px;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="buySkiButton">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>680</y>
+     <width>110</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton#buySkiButton {
+    /* Text */
+    color: #FFFFFF;
+    font-family: &quot;Press Start 2P&quot;, &quot;Pixel Arial 11&quot;, &quot;Monospace&quot;;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 2px;
+
+    /* Size / padding – slightly shorter than startButton */
+    padding: 6px 16px;      /* was 28px horizontally */
+    min-height: 30px;
+
+    /* Button body – same navy gradient */
+    background-color: qlineargradient(
+        x1:0, y1:0, x2:0, y2:1,
+        stop:0 #243764,
+        stop:1 #1B2C56
+    );
+}
+
+QPushButton#shredGnarButton:hover {
+    background-color: qlineargradient(
+        x1:0, y1:0, x2:0, y2:1,
+        stop:0 #2c447b,
+        stop:1 #243764
+    );
+}
+
+QPushButton#shredGnarButton:pressed {
+    background-color: #111B33;
+    padding-top: 8px;
+    padding-bottom: 4px;
+}</string>
+   </property>
+   <property name="text">
+    <string>BUY SKI</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="jonnySprite">
+   <property name="geometry">
+    <rect>
+     <x>-40</x>
+     <y>-10</y>
+     <width>251</width>
+     <height>211</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="ShredGnarResources.qrc">:/jonnySprites/a9_Resources/jonnySprites/JonnyHeadshot.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QTextBrowser" name="textBrowser">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>30</y>
+     <width>421</width>
+     <height>110</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Magneto</family>
+    </font>
+   </property>
+  </widget>
+  <widget class="QLabel" name="weatherIconBackground">
+   <property name="geometry">
+    <rect>
+     <x>630</x>
+     <y>50</y>
+     <width>90</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="ShredGnarResources.qrc">:/backgroundSprites/a9_Resources/backgroundResources/WeatherFrame.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="weatherIcon">
+   <property name="geometry">
+    <rect>
+     <x>640</x>
+     <y>60</y>
+     <width>70</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="ShredGnarResources.qrc">:/otherSprites/a9_Resources/otherSprites/SunnyDayIcon.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="ShredGnarResources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

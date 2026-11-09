@@ -1,0 +1,104 @@
+<RCC>
+    <qresource prefix="/backgroundSprites">
+        <file>a9_Resources/backgroundResources/ShredGnarWelcome.png</file>
+        <file>a9_Resources/backgroundResources/SkiShop.png</file>
+        <file>a9_Resources/backgroundResources/TutorialBackground.png</file>
+        <file>a9_Resources/jonnySprites/DialogueLargeLeft.png</file>
+        <file>a9_Resources/jonnySprites/DialogueLargeRight.png</file>
+        <file>a9_Resources/jonnySprites/DialogueLeft.png</file>
+        <file>a9_Resources/jonnySprites/DialogueRight.png</file>
+        <file>a9_Resources/backgroundResources/GameBackgroundUpdated.png</file>
+        <file>a9_Resources/backgroundResources/GameBackgroundUpdatedx2.png</file>
+        <file>a9_Resources/backgroundResources/ScoreFrame.png</file>
+        <file>a9_Resources/backgroundResources/WeatherFrame.png</file>
+        <file>a9_Resources/backgroundResources/BigSnowFall.gif</file>
+        <file>a9_Resources/backgroundResources/FastSnowFall.gif</file>
+        <file>a9_Resources/backgroundResources/GameBackgroundIcy.png</file>
+        <file>a9_Resources/backgroundResources/GameBackgroundPowder.png</file>
+        <file>a9_Resources/backgroundResources/Instruction.png</file>
+    </qresource>
+    <qresource prefix="/jonnySprites">
+        <file>a9_Resources/jonnySprites/JonnyGesture.png</file>
+        <file>a9_Resources/jonnySprites/JonnyGoShred.png</file>
+        <file>a9_Resources/jonnySprites/JonnyStanding.png</file>
+        <file>a9_Resources/jonnySprites/JonnyStandingRight.png</file>
+        <file>a9_Resources/jonnySprites/JonnyCheer.png</file>
+        <file>a9_Resources/otherSprites/BlackSign.png</file>
+        <file>a9_Resources/otherSprites/BlueSign.png</file>
+        <file>a9_Resources/otherSprites/GreenSign.png</file>
+        <file>a9_Resources/otherSprites/IcyDayIcon.png</file>
+        <file>a9_Resources/jonnySprites/JonnyHeadshot.png</file>
+        <file>a9_Resources/jonnySprites/CoinIcon.png</file>
+    </qresource>
+    <qresource prefix="/skierSprites">
+        <file>a9_Resources/skierSprites/SkierLeft1.png</file>
+        <file>a9_Resources/skierSprites/SkierLeft2.png</file>
+        <file>a9_Resources/skierSprites/SkierLeft3.png</file>
+        <file>a9_Resources/skierSprites/SkierLeft4.png</file>
+        <file>a9_Resources/skierSprites/SkierRight1.png</file>
+        <file>a9_Resources/skierSprites/SkierRight2.png</file>
+        <file>a9_Resources/skierSprites/SkierRight3.png</file>
+        <file>a9_Resources/skierSprites/SkierRight4.png</file>
+        <file>a9_Resources/skierSprites/SkierStraight.png</file>
+        <file>a9_Resources/skierSprites/SkierStraightDown.png</file>
+        <file>a9_Resources/skierSprites/CrashedSkierLeft.png</file>
+        <file>a9_Resources/skierSprites/CrashedSkierRight.png</file>
+        <file>a9_Resources/skierSprites/SnowCoveredSkier.png</file>
+        <file>a9_Resources/skierSprites/TempTrickSkier.png</file>
+    </qresource>
+    <qresource prefix="/obstacleSprites">
+        <file>a9_Resources/skierSprites/Tree1Death.png</file>
+        <file>a9_Resources/skierSprites/Tree2Death.png</file>
+        <file>a9_Resources/backgroundResources/GameBackground.png</file>
+        <file>a9_Resources/obstacleSprites/CliffDrop.png</file>
+        <file>a9_Resources/obstacleSprites/CRASH!.png</file>
+        <file>a9_Resources/obstacleSprites/Powder.png</file>
+        <file>a9_Resources/obstacleSprites/Rock1.png</file>
+        <file>a9_Resources/obstacleSprites/SnowPile.png</file>
+        <file>a9_Resources/obstacleSprites/Tree1.png</file>
+        <file>a9_Resources/obstacleSprites/Tree2.png</file>
+        <file>a9_Resources/obstacleSprites/Jump.png</file>
+        <file>a9_Resources/obstacleSprites/Log.png</file>
+        <file>a9_Resources/obstacleSprites/+500!.png</file>
+    </qresource>
+    <qresource prefix="/skiSprites">
+        <file>a9_Resources/skiSprites/allMountainSki.png</file>
+        <file>a9_Resources/skiSprites/bigMountainSki.png</file>
+        <file>a9_Resources/skiSprites/carvingSki.png</file>
+        <file>a9_Resources/skiSprites/mogulSki.png</file>
+        <file>a9_Resources/skiSprites/parkSki.png</file>
+        <file>a9_Resources/skiSprites/powderSki.png</file>
+        <file>a9_Resources/skiSprites/raceSki.png</file>
+        <file>a9_Resources/skiSprites/touringSki.png</file>
+        <file>a9_Resources/skiSprites/DiagramRocker.png</file>
+        <file>a9_Resources/skiSprites/DiagramSki.png</file>
+        <file>a9_Resources/skiSprites/DiagramUnderfoot.png</file>
+        <file>a9_Resources/skiSprites/LockedBlueOrangeSkis.png</file>
+        <file>a9_Resources/skiSprites/LockedGreenLightningSkis.png</file>
+        <file>a9_Resources/skiSprites/LockedGreenSkis.png</file>
+        <file>a9_Resources/skiSprites/LockedPinkSkis.png</file>
+        <file>a9_Resources/skiSprites/LockedPurpleCyanSkis.png</file>
+        <file>a9_Resources/skiSprites/LockedSuperSkis.png</file>
+        <file>a9_Resources/skiSprites/LockedYellowSkis.png</file>
+        <file>a9_Resources/skiSprites/DiagramFlex.png</file>
+    </qresource>
+    <qresource prefix="/dialogues">
+        <file>a9_Resources/dialogues/terminology.txt</file>
+        <file>a9_Resources/dialogues/tutorial.txt</file>
+        <file>a9_Resources/dialogues/weatherTutorial.txt</file>
+        <file>a9_Resources/dialogues/skiShopTutorial.txt</file>
+        <file>a9_Resources/dialogues/skiShopWeatherTutorial.txt</file>
+        <file>a9_Resources/dialogues/skiShop.txt</file>
+    </qresource>
+    <qresource prefix="/otherSprites">
+        <file>a9_Resources/otherSprites/PowderDayIcon.png</file>
+        <file>a9_Resources/otherSprites/SunnyDayIcon.png</file>
+        <file>a9_Resources/otherSprites/BlueSign.png</file>
+        <file>a9_Resources/otherSprites/GreenSign.png</file>
+        <file>a9_Resources/otherSprites/IcyDayIcon.png</file>
+        <file>a9_Resources/otherSprites/BlackSign.png</file>
+    </qresource>
+    <qresource prefix="/fonts">
+        <file>a9_Resources/fonts/RetroGaming.ttf</file>
+    </qresource>
+</RCC>

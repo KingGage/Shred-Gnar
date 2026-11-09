@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>WeatherTutorialScreen</class>
+ <widget class="QWidget" name="WeatherTutorialScreen">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>750</width>
+    <height>750</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QLabel" name="background">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>750</width>
+     <height>750</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="ShredGnarResources.qrc">:/backgroundSprites/a9_Resources/backgroundResources/TutorialBackground.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="jonnySprite">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>150</y>
+     <width>500</width>
+     <height>500</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="ShredGnarResources.qrc">:/jonnySprites/a9_Resources/jonnySprites/JonnyStanding.png</pixmap>
+   </property>
+  </widget>
+  <widget class="QLabel" name="speechBubbleSprite">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>10</y>
+     <width>380</width>
+     <height>331</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="ShredGnarResources.qrc">:/backgroundSprites/a9_Resources/jonnySprites/DialogueLargeLeft.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="weatherSprite">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>310</y>
+     <width>191</width>
+     <height>171</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="ShredGnarResources.qrc">:/otherSprites/a9_Resources/otherSprites/SunnyDayIcon.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="nextButton">
+   <property name="geometry">
+    <rect>
+     <x>580</x>
+     <y>640</y>
+     <width>121</width>
+     <height>48</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton#nextButton {
+    /* Text */
+    color: #FFFFFF;
+    font-family: &quot;Press Start 2P&quot;, &quot;Pixel Arial 11&quot;, &quot;Monospace&quot;;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 2px;
+
+    /* Size / padding – slightly shorter than startButton */
+    padding: 6px 16px;      /* was 28px horizontally */
+    min-height: 30px;
+
+    /* Button body – same navy gradient */
+    background-color: qlineargradient(
+        x1:0, y1:0, x2:0, y2:1,
+        stop:0 #243764,
+        stop:1 #1B2C56
+    );
+
+    /* White outline */
+    border-style: solid;
+    border-width: 3px;
+    border-color: #FFFFFF;
+    border-radius: 8px;
+
+    outline: none;
+}
+
+QPushButton#nextButton:hover {
+    background-color: qlineargradient(
+        x1:0, y1:0, x2:0, y2:1,
+        stop:0 #2c447b,
+        stop:1 #243764
+    );
+}
+
+QPushButton#nextButton:pressed {
+    background-color: #111B33;
+    padding-top: 8px;
+    padding-bottom: 4px;
+}</string>
+   </property>
+   <property name="text">
+    <string>NEXT</string>
+   </property>
+  </widget>
+  <widget class="QTextBrowser" name="textBrowser">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>50</y>
+     <width>321</width>
+     <height>211</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QListWidget" name="skiSpriteList">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>510</y>
+     <width>361</width>
+     <height>201</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="weatherIconHolder">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>300</y>
+     <width>181</width>
+     <height>171</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="ShredGnarResources.qrc">:/backgroundSprites/a9_Resources/backgroundResources/WeatherFrame.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="skiSpriteContainer">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>480</y>
+     <width>521</width>
+     <height>261</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="ShredGnarResources.qrc">:/backgroundSprites/a9_Resources/backgroundResources/ScoreFrame.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <zorder>background</zorder>
+  <zorder>jonnySprite</zorder>
+  <zorder>speechBubbleSprite</zorder>
+  <zorder>nextButton</zorder>
+  <zorder>textBrowser</zorder>
+  <zorder>weatherIconHolder</zorder>
+  <zorder>weatherSprite</zorder>
+  <zorder>skiSpriteContainer</zorder>
+  <zorder>skiSpriteList</zorder>
+ </widget>
+ <resources>
+  <include location="ShredGnarResources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

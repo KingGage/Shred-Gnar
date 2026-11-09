@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>EndScreen</class>
+ <widget class="QWidget" name="EndScreen">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>750</width>
+    <height>750</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QLabel" name="backGround">
+   <property name="geometry">
+    <rect>
+     <x>-3</x>
+     <y>5</y>
+     <width>761</width>
+     <height>741</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="ShredGnarResources.qrc">:/backgroundSprites/a9_Resources/backgroundResources/TutorialBackground.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="playAgainButton">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>630</y>
+     <width>201</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton#playAgainButton {
+    color: #ffffff;
+    font-family: &quot;Segoe UI&quot;, &quot;SF Pro Text&quot;, &quot;Arial&quot;, sans-serif;
+    font-size: 12pt;
+    font-weight: 600;
+    letter-spacing: 1px;
+
+    padding: 6px 28px;   /* a bit wider for Start */
+    min-height: 32px;
+
+    background-color: qlineargradient(
+        x1:0, y1:0, x2:0, y2:1,
+        stop:0 #3b65b3,
+        stop:1 #2b4f8a
+    );
+
+    border: 2px solid #ffffff;
+    border-radius: 8px;
+
+    border-top-color: #dfe9ff;
+    border-left-color: #dfe9ff;
+    border-right-color: #1b315c;
+    border-bottom-color: #1b315c;
+
+    outline: none;
+}
+
+QPushButton#playAgainButton:hover {
+    background-color: qlineargradient(
+        x1:0, y1:0, x2:0, y2:1,
+        stop:0 #4a79cf,
+        stop:1 #355fa4
+    );
+}
+
+QPushButton#playAgainButton:pressed {
+    background-color: #223a66;
+    padding-top: 8px;
+    padding-bottom: 4px;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>PLAY AGAIN</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="quitButton">
+   <property name="geometry">
+    <rect>
+     <x>460</x>
+     <y>630</y>
+     <width>201</width>
+     <height>48</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton#quitButton {
+    color: #ffffff;
+    font-family: &quot;Segoe UI&quot;, &quot;SF Pro Text&quot;, &quot;Arial&quot;, sans-serif;
+    font-size: 12pt;
+    font-weight: 600;
+    letter-spacing: 1px;
+
+    padding: 6px 28px;   /* a bit wider for Start */
+    min-height: 32px;
+
+    background-color: qlineargradient(
+        x1:0, y1:0, x2:0, y2:1,
+        stop:0 #3b65b3,
+        stop:1 #2b4f8a
+    );
+
+    border: 2px solid #ffffff;
+    border-radius: 8px;
+
+    border-top-color: #dfe9ff;
+    border-left-color: #dfe9ff;
+    border-right-color: #1b315c;
+    border-bottom-color: #1b315c;
+
+    outline: none;
+}
+
+QPushButton#quitButton:hover {
+    background-color: qlineargradient(
+        x1:0, y1:0, x2:0, y2:1,
+        stop:0 #4a79cf,
+        stop:1 #355fa4
+    );
+}
+
+QPushButton#quitButton:pressed {
+    background-color: #223a66;
+    padding-top: 8px;
+    padding-bottom: 4px;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>QUIT</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="jonny">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>200</y>
+     <width>381</width>
+     <height>421</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="ShredGnarResources.qrc">:/jonnySprites/a9_Resources/jonnySprites/JonnyStanding.png</pixmap>
+   </property>
+  </widget>
+  <widget class="QLabel" name="speechBubble">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>20</y>
+     <width>311</width>
+     <height>330</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="ShredGnarResources.qrc">:/backgroundSprites/a9_Resources/jonnySprites/DialogueLargeLeft.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QTextBrowser" name="textBox">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>50</y>
+     <width>256</width>
+     <height>270</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="ShredGnarResources.qrc"/>
+ </resources>
+ <connections/>
+</ui>
